@@ -63,4 +63,4 @@ The numbers for the Easy Ensemble Adaboost Classifier indicate a higher f-1 scor
 
 ## Summary 
 
-In summary, from looking at the results of our models with their F-1 Scores as well as accuracy. My concluding statement indicates that all of these models have their strengths and weaknesses, therefore they could always be suited for a wide array of analysis. However, my recommendation would be to use the Easy Ensemble Adaboost classifier as this model provides high accuracy as well as f-1 scores.
+In summary, from looking at the results of our models with their F-1 Scores as well as accuracy. My concluding statement indicates that all of these models have their strengths and weaknesses, therefore they could always be suited for a wide array of analysis. However, my recommendation would be to use the **Easy Ensemble Adaboost** classifier as this model provides high accuracy as well as f-1 scores.
