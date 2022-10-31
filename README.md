@@ -9,16 +9,16 @@ The purpose of this analysis  was to employ machine learning techniques in order
 
 Before going into the analysis, it is important to define what these scores mean and indicate.
 
-##### **Precision Score:** 
+##### 1) Precision Score
 Measures the proportion of positively predicted labels that are actually correct. Precision is also known as the positive predictive value.
 
-##### **Recall Score:** 
+##### 2) Recall Score
 Model recall score represents the model’s ability to correctly predict the positives out of actual positives. This is unlike precision which measures how many predictions made by models are actually positive out of all positive predictions made.
 
-##### **Accuracy Score:** 
+##### 3) Accuracy Score
 Model accuracy is a machine learning classification model performance metric that is defined as the **ratio of true positives and true negatives to all positive and negative observations.** In other words, accuracy tells us how often we can expect our machine learning model will **correctly predict** an outcome out of the total number of times it made predictions. 
 
-##### **F-1 Score:**
+##### 4) F-1 Score
 Model F1 score represents the model score as a function of **precision** and **recall** score. F-score is a machine learning model performance metric that gives equal weight to both the Precision and Recall for measuring its performance in terms of accuracy, making it an alternative to Accuracy metrics 
 
 ### Oversampling
@@ -64,59 +64,3 @@ The numbers for the Easy Ensemble Adaboost Classifier indicate a higher f-1 scor
 ## Summary 
 
 In summary, from looking at the results of our models with their F-1 Scores as well as accuracy. My concluding statement indicates that all of these models have their strengths and weaknesses, therefore they could always be suited for a wide array of analysis. However, my recommendation would be to use the Easy Ensemble Adaboost classifier as this model provides high accuracy as well as f-1 scores.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-In order to determine how many vine and non vine reviews existed, it was fundamental to first narrow down the "helpful reviews". This was accomplished by filtering helpful_votes over total_votes in a ration of 50% and above, meaning that only reviews that the helpful reviews were more or equal than 50% would only be considered. 
-
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/helpful_votes_ratio.png)
-
-This meant that the amount of votes that were considered not helful were dropped, out of curiosity I calculated the amount by running the following code:
-
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/dropped_votes.png)
-
-Finnaly, the Vine and Non-Vine reviews were calculated by filtering the data and creating a dataframe for each condition.
-
-#### Vine Reviews
-
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/vine_votes.png)
-
-#### Non-Vine Reviews
-
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/non_vine_votes.png)
-
-
-### Five Star Reviews and Percentages
-
-In order to filter the five star reviews, the following code was used:
-
-#### Vine Five Star Reviews
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/vine_five.png)
-
-#### Non-Vine Five Star Reviews
-![Screenshot](https://github.com/chgallegos/Amazon_Vine_Analysis/blob/main/resources/not_vine_five.png)
-
-## Summary 
-
-The first thing that comes to mind when looking at the difference between Vine and Non-Vine data, is that given the high amount of difference of total reviews and the amount of five stars, one could infer that the data is biased towards having better (more star) reviews with using Vine. I am confident that my statement could be also supported if we add the "Verified purchase" part of the data to the analysis, meaning that if we remove Non verified purchases from the data, the analysis could be even more accurrate and less biased since the reviews would be made by customers that have been verified as well as with the intrinsic incentive genuine desire to review th
